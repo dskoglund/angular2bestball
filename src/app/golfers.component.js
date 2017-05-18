@@ -32,8 +32,8 @@ var GolfersComponent = (function () {
 GolfersComponent = __decorate([
     core_1.Component({
         selector: 'my-golfers',
-        template: "\n    <md-toolbar color=\"accent\">\n      <span>{{toolbarTitle}}</span>\n    </md-toolbar>\n    <golfer-detail [golfer]=\"selectedGolfer\"></golfer-detail>\n    <md-list>\n      <md-list-item *ngFor = \"let golfer of golfers\" [class.selected]=\"golfer === selectedGolfer\">\n        <div>\n          {{golfer.id}}\n        </div>\n        <div>\n          {{golfer.name}}\n        </div>\n        <button md-raised-button (click)=\"onSelect(golfer)\">View Details</button>\n      </md-list-item>\n    </md-list>\n    ",
-        styles: ["\n      .selected {\n        background-color: #CFD8DC !important;\n      }\n    "]
+        templateUrl: "./golfers.component.html",
+        styleUrls: ['./golfers.component.css']
     }),
     __metadata("design:paramtypes", [golfer_service_1.GolferService])
 ], GolfersComponent);

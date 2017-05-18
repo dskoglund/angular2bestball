@@ -16,7 +16,7 @@ var NavbarComponent = (function () {
 NavbarComponent = __decorate([
     core_1.Component({
         selector: 'my-navbar',
-        template: "\n    <md-toolbar color=\"primary\">\n        <span>{{title}}</span>\n      <md-toolbar-row>\n        <span>\n          <a md-fab routerLink=\"/golfers\"><h4>Golfers</h4></a>\n        </span>\n        <span>\n          <a md-fab routerLink=\"/dashboard\"><h4>Dashboard</h4></a>\n        </span>\n      </md-toolbar-row>\n    </md-toolbar>\n  "
+        templateUrl: "./navbar.component.html"
     })
 ], NavbarComponent);
 exports.NavbarComponent = NavbarComponent;

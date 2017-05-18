@@ -33,6 +33,10 @@ AppModule = __decorate([
             animations_1.BrowserAnimationsModule,
             router_1.RouterModule.forRoot([
                 {
+                    path: 'detail/:id',
+                    component: golfer_detail_component_1.GolferDetailComponent
+                },
+                {
                     path: '',
                     redirectTo: '/dashboard',
                     pathMatch: 'full'

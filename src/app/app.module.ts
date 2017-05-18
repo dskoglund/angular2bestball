@@ -21,6 +21,10 @@ import { GolferService }            from './golfer.service';
     BrowserAnimationsModule,
     RouterModule.forRoot([
       {
+        path: 'detail/:id',
+        component: GolferDetailComponent
+      },
+      {
         path: '',
         redirectTo: '/dashboard',
         pathMatch: 'full'

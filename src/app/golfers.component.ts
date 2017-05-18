@@ -5,28 +5,8 @@ import { GolferService }     from './golfer.service';
 
 @Component({
   selector: 'my-golfers',
-  template: `
-    <md-toolbar color="accent">
-      <span>{{toolbarTitle}}</span>
-    </md-toolbar>
-    <golfer-detail [golfer]="selectedGolfer"></golfer-detail>
-    <md-list>
-      <md-list-item *ngFor = "let golfer of golfers" [class.selected]="golfer === selectedGolfer">
-        <div>
-          {{golfer.id}}
-        </div>
-        <div>
-          {{golfer.name}}
-        </div>
-        <button md-raised-button (click)="onSelect(golfer)">View Details</button>
-      </md-list-item>
-    </md-list>
-    `,
-    styles: [`
-      .selected {
-        background-color: #CFD8DC !important;
-      }
-    `]
+  templateUrl: `./golfers.component.html`,
+  styleUrls: ['./golfers.component.css']
 })
 
 export class GolfersComponent implements OnInit {

@@ -23,7 +23,7 @@ __decorate([
 GolferDetailComponent = __decorate([
     core_1.Component({
         selector: 'golfer-detail',
-        template: "\n  <div *ngIf=\"golfer\">\n    <md-card>\n      <md-card-title>{{golfer.name}} Details!</md-card-title>\n      <md-card-content>\n        <div>\n          <label>id: </label>{{golfer.id}}\n        </div>\n        <div>\n          <label>name: </label>\n          <md-input-container>\n            <input mdInput [(ngModel)]=\"golfer.name\" placeholder=\"name\">\n          </md-input-container>\n        </div>\n      </md-card-content>\n    </md-card>\n  </div>\n "
+        templateUrl: "./golfer-detail.component.html"
     })
 ], GolferDetailComponent);
 exports.GolferDetailComponent = GolferDetailComponent;
